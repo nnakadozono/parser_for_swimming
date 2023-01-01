@@ -1,0 +1,1 @@
+Parse exported data related to swimming from iPhone Health app.
