@@ -71,8 +71,9 @@ def get_workout_summary(workoutTags):
     for col in numericColumns:
         df[col] = pd.to_numeric(df[col])
 
-    #df.set_index('creationDate', inplace=True)
-    df.index = df['startDate'].dt.date
+    # df.set_index('creationDate', inplace=True)
+    # df.index = df['startDate'].dt.date
+    df.set_index('startDate', inplace=True)
 
     return df
     
