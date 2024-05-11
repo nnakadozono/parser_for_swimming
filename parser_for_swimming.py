@@ -73,7 +73,7 @@ def get_workout_summary(workoutTags):
 
     # df.set_index('creationDate', inplace=True)
     # df.index = df['startDate'].dt.date
-    df.set_index('startDate', inplace=True)
+    df.set_index('startDate', drop=False, inplace=True)
 
     return df
     
